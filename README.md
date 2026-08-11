@@ -1,6 +1,6 @@
 # grihf-frontend_capstone_starter_code
 
- aplicación web full-stack (MERN) que permite a los pacientes
+med_appt es una aplicación web full-stack (MERN) que permite a los pacientes
 registrarse, iniciar sesión, buscar doctores, reservar citas médicas, dejar reseñas y
 gestionar su perfil.
 
