@@ -45,8 +45,8 @@ doctor-appointment-app/
 ### 2. Clonar el repositorio
 
 ```bash
-git clone https://github.com/<tu-usuario>/<tu-repositorio>.git
-cd doctor-appointment-app
+git clone [https://github.com/<tu-usuario>/<tu-repositorio>.git
+cd doctor-appointment-app](https://github.com/DavidGaitan09/grihf-frontend_capstone_starter_code.git)
 ```
 
 ### 3. Configurar el Backend
