@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: #f4f7fb;
+  color: #1c2b3a;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #0b6e5f;
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-cta {
+  background: white;
+  color: #0b6e5f;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.navbar-logout-btn {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Notification */
+.notification-container {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 999;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  color: white;
+  min-width: 240px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.notification-success {
+  background: #1f9d55;
+}
+.notification-error {
+  background: #d64545;
+}
+.notification-info {
+  background: #2d6cdf;
+}
+
+.notification button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* Home hero */
+.home-hero {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.home-hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.5rem;
+  color: #0b6e5f;
+}
+
+.home-tagline {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.home-description {
+  max-width: 500px;
+  margin: 1rem auto;
+  color: #46586a;
+}
+
+.home-nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.home-nav-links a {
+  color: #0b6e5f;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Forms (auth, appointment, reviews, profile) */
+.auth-page,
+.appointments-page,
+.profile-page,
+.reviews-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.auth-form,
+.appointment-form,
+.appointment-form-ic,
+.give-reviews-form,
+.profile-card-edit-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-form label,
+.appointment-form label,
+.appointment-form-ic label,
+.give-reviews-form label,
+.profile-card-edit-form label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.auth-form input,
+.auth-form select,
+.appointment-form input,
+.appointment-form-ic input,
+.give-reviews-form select,
+.give-reviews-form textarea,
+.profile-card-edit-form input {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccd6e0;
+}
+
+.auth-form button,
+.appointment-form button,
+.appointment-form-ic button,
+.give-reviews-form button,
+.profile-card-view button,
+.profile-card-edit-form button {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background: #0b6e5f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Find doctor search */
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccd6e0;
+}
+
+.doctor-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.doctor-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.doctor-card-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.appointments-forms {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Profile card */
+.profile-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.profile-card-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.profile-card-role {
+  text-transform: capitalize;
+  color: #0b6e5f;
+  font-weight: 600;
+}
