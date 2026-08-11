@@ -1,6 +1,6 @@
-# MediCare Connect — Sistema de Reserva de Citas Médicas
+# grihf-frontend_capstone_starter_code
 
-MediCare Connect es una aplicación web full-stack (MERN) que permite a los pacientes
+ aplicación web full-stack (MERN) que permite a los pacientes
 registrarse, iniciar sesión, buscar doctores, reservar citas médicas, dejar reseñas y
 gestionar su perfil.
 
